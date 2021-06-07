@@ -16,3 +16,9 @@
     background: #fff;
     border-radius: 3px;
   }
+
+  /* Getting rid of the default link styles here */
+.navbar li a {
+    color: #000;
+    text-decoration: none;
+  }
