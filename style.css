@@ -22,3 +22,10 @@
     color: #000;
     text-decoration: none;
   }
+
+  /* Introduce formatting for headers*/ 
+  /* Put media queries depending on screen-size */
+  @media (max-width: 600px) {
+     /*Nav bar has to be in a menu 
+     /*Images one on top of the other
+  }
