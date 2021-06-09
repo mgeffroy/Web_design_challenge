@@ -3,22 +3,23 @@
 <html lang="en">
 
 <!--Link to bootstrap and css file to change formatting-->
-<link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 
 <!---Create a header that has to do with the theme of the homework/webpage-->
 <head>
   <meta charset="UTF-8">
-  <title>WVD Cloudiness </title>
+  <title>WVD Cloudiness</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Weatherpy Analysis</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="index.html">Weatherpy Analysis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -30,11 +31,11 @@
           <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Plots
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="temperature.html">Temperature</a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
             <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
             <li><a class="dropdown-item" href='windspeed.html'>Windspeed</li>
             <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
@@ -44,4 +45,52 @@
   
     </div>
   </div>
-</nav>
+  </nav>
+
+   <!---Put project title in -->
+   <br>
+   <h1>Cloudiness</h1>
+   <br>
+   <hr>
+  
+   <!--Create our first container -->   
+  <div class = "container px-4">
+  
+   <!--Create our first row -->
+    <div class = "row gx-5">
+  
+  <!--Create our columns inside our rows-->
+      <div class = "col-sm-12 col-md-8">
+        <div class ="p-3 bg-white"
+        <a href="#" >
+          <img src="Images/sp_latitude_vs_Cloudiness.png" id=main_img alt="Cloudy">
+       <p> In this scatterplot we can observe the cloudiness percentage at different latitudes. There doesn't seem to be a relationship with cloudiness and latitude due to the high variance of cloudiness in different cities across latitudes.</p>
+        
+      </div>
+    </div>
+  
+      <div class="col-sm-12 col-md-4">
+        <h3>Visualizations</h3>
+        <hr>
+        <div class= "row row-cols-1 row-cols-md-2 g-4">
+          <a class="btn btn-link" role="button" href="temperature.html">
+            <img src="Images/sp_latitude_vs_maxtemp.png" alt="..." class="img-thumbnail" >
+           </a>
+            <a class="btn btn-link" role="button" a href="humidity.html">
+              <img src="Images/sp_latitude_vs_humidity.png" alt="..." class="img-thumbnail">
+             </a>
+             <a class="btn btn-link" role="button" href="cloudiness.html">
+               <img src="Images/sp_latitude_vs_Cloudiness.png" alt="..." class="img-thumbnail">
+              </a>
+              <a class="btn btn-link" role="button" href="windspeed.html">
+                <img src="Images/sp_latitude_vs_wind.png" alt="..." class="img-thumbnail">
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+  
+  </body>
+  </html>
+  
