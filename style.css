@@ -1,9 +1,18 @@
 /*Most of the formatting is inside the bootstrap/bootswatch theme that was downloaded, still some
-changes will be made to ameliorate the web page*/ 
-.thumbnail{
-background-color: blanchedalmond;
-size: 25px;
+changes will be made to ameliorate the web page*/
+.nav-bar {
+padding: 5px;
 
 }
+
+h1 {
+    text-align: center;
+}
      
-  
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}

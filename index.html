@@ -3,7 +3,7 @@
 <html lang="en">
 
 <!--Link to bootstrap and css file to change formatting-->
-<link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+<link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 
 <!---Create a header that has to do with the theme of the homework/webpage-->
@@ -31,10 +31,10 @@
           <a class="nav-link" href="data.html">Data</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Plots
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="temperature.html">Max Temperature</a></li>
             <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
             <li><a class="dropdown-item" href='windspeed.html'>Windspeed</li>
@@ -46,31 +46,49 @@
     </div>
   </div>
   </nav>
- 
+  
+  <!---Put project title in -->
+  <br>
+ <h1>Project Summary</h1>
+ <br>
+
  <!--Create our first container -->   
-<div class = container>
+<div class = "container px-4">
+
  <!--Create our first row -->
-  <div class = row> 
+  <div class = "row gx-5">
+
 <!--Create our columns inside our rows-->
     <div class = "col-sm-12 col-md-8">
-
-    </div>
-
-    <div class = "col-sm-12 col-md-4">
-      <a href="temperature.html" class="thumbnail">
-        <img src="Images/sp_latitude_vs_maxtemp.png" alt="Temperature">
-        <a href="humidity.html" class="img-thumbnail">
-          <img src="Images/sp_latitude_vs_humidity.png" alt="Humidity">
-          <a href="cloudiness.html" class="thumbnail">
-            <img src="Images/sp_latitude_vs_Cloudiness.png" alt="Cloudiness">
-            <a href="windspeed.html" class="thumbnail">
-              <img src="Images/S_vs_windspeed.png" alt="Wind">
-
+      <div class ="p-3 bg-white"
+      <a href="#" >
+        <img src="Images/sp_latitude_vs_maxtemp.png" align = "right" alt="Temperature">
+     <p> The purpose of this project was to analyze how weather changes as we get closer to the equator. This analysis involved creating a random list of cities alongisde their latitude and longitude. From there, an Open Weather API pull was used to gather weather data for each of the 500+ cities as of April 30, 2021.</p>
+      <p>After compiling the dataset, Matplotlib was used to plot key relationships between different weather variables and their latitudes. This site includes the source data and visualizations created as part of the analysis. Explanations and descriptions of trends are also included.</p>
     </div>
   </div>
 
-
-</div>
+    <div class="col-sm-12 col-md-4">
+      <h3>Visualizations</h3>
+      <hr>
+      <div class= "row row-cols-1 row-cols-md-2 g-4">
+        <a class="btn btn-link" role="button" href="temperature.html">
+          <img src="Images/sp_latitude_vs_maxtemp.png" alt="..." class="img-thumbnail" >
+         </a>
+          <a class="btn btn-link" role="button" a href="humidity.html">
+            <img src="Images/sp_latitude_vs_humidity.png" alt="..." class="img-thumbnail">
+           </a>
+           <a class="btn btn-link" role="button" href="cloudiness.html">
+             <img src="Images/sp_latitude_vs_Cloudiness.png" alt="..." class="img-thumbnail">
+            </a>
+            <a class="btn btn-link" role="button" href="windspeed.html">
+              <img src="Images/sp_latitude_vs_wind.png" alt="..." class="img-thumbnail">
+            </a>
+          </div>
+      </div>
+    </div>
+  </div>
+  
 
 </body>
 </html>
