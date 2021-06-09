@@ -21,3 +21,9 @@ h3 {
 p {margin: 15px;
 
 }
+
+#main_img { align-items: center;
+    box-align: top;
+    margin-left: 80px;
+
+}
