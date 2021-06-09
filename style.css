@@ -5,6 +5,7 @@ padding: 5px;
 
 }
 
+
 h1 {
     text-align: center;
 }
@@ -15,4 +16,8 @@ h2 {
 
 h3 {
     text-align: center;
+}
+
+p {margin: 15px;
+
 }
