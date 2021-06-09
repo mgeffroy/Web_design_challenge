@@ -1,52 +1,9 @@
+/*Most of the formatting is inside the bootstrap/bootswatch theme that was downloaded, still some
+changes will be made to ameliorate the web page*/ 
+.thumbnail{
+background-color: blanchedalmond;
+size: 25px;
 
-
-.navbar {
-    padding: 10px;
-    background: #5191fd;
-  }
-  
-  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. 
-  Floats could have been used too */
-  .navbar li {
-    display: inline-block;
-    padding: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    background: #fff;
-    border-radius: 3px;
-  }
-
-  /* Getting rid of the default link styles here */
-.navbar li a {
-    color: #000;
-    text-decoration: none;
-  }
-   
-  #nav-select {
-    visibility: hidden;
-  }
-
-  /* Introduce formatting for headers*/ 
-  /* Put media queries depending on screen-size */
-  @media (max-width: 600px)  {
-    .navbar li {
-      padding: 10px;
-    }
-  /*Nav bar has to be in a hamburguer menu. 
-     /*Images one on top of the other*/
-    .post {
-      margin-right: 30px;
-      margin-left: 30px;
-    }
-  
-    .navbar ul {
-      visibility: hidden;
-    }
-  
-    #nav-select {
-      visibility: visible;
-    }
-  }
+}
      
   
